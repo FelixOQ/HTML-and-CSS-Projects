@@ -1,0 +1,10 @@
+p {
+color: honeydew;
+background-color: darkcyan;
+font-size: 25px;
+text-align: center;
+}
+
+.second {
+	text-shadow: -2px 2px 1px hotpink;
+}

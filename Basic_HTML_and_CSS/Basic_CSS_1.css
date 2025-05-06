@@ -1,0 +1,18 @@
+div {
+	font-family: Monaco;
+}
+
+h2 {
+	color: cornflowerblue;
+}
+
+p {
+	color: indigo;
+	text-align: right;
+}
+
+h1 {
+	color: darkorange;
+	text-align: center;
+	font-family: Arial;
+}

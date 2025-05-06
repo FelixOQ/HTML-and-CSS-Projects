@@ -1,0 +1,19 @@
+table, th, td {
+  border: 1.5px solid darkcyan;
+  border-collapse: collapse;
+}
+
+td:hover {
+	background-color: royalblue;
+	color: cornsilk;
+}
+
+th {
+	background-color: mediumslateblue;
+	color: ivory;
+}
+
+td {
+	background-color: lightseagreen;
+	color: floralwhite;
+}
