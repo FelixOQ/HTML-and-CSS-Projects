@@ -1,0 +1,99 @@
+body {
+	 background: linear-gradient(121deg, darkMagenta, blueViolet, mediumBlue);
+	 border: solid 3px mistyrose;
+	 border-radius: 5px;
+	 color: khaki;
+	 padding: 10px;
+}
+
+a {
+	color: lightSteelBlue;
+}
+
+h1, nav {
+	text-align: center;
+}
+
+nav {
+	 font-size: 14px;
+	 color: silver;
+}
+
+#home div {
+	 background: linear-gradient(darkTurquoise, lightSeaGreen, lightSeaGreen, lightSeaGreen, teal);
+	 border: solid 2px lightBlue;
+	 border-radius: 10px;
+	 color: lavenderBlush;
+	 margin: 8px 8px 0 8px;
+	 padding: 20px;
+}
+
+summary h3 {
+	display: inline;
+}
+
+.species div {
+	 background-color: teal;
+	 border: solid 2px chartreuse;
+	 border-radius: 50px 0 15px 50px;
+	 margin: 20px;
+	 padding: 15px;
+	 text-align: right;
+}
+
+.feat div {
+	 background-color: midnightBlue;
+	 border: solid 2px royalBlue;
+	 border-radius: 0 50px 50px 15px;
+	 margin: 20px;
+	 padding: 15px;
+	 text-align: left;
+}
+
+.background div {
+	 background-color: chocolate;
+	 border: solid 2px yellow;
+	 border-radius: 50px 15px 0 50px;
+	 margin: 20px;
+	 padding: 15px;
+	 text-align: right;
+}
+
+.paladin div {
+	 background-color: mediumVioletRed;
+	 border: solid 2px hotPink;
+	 border-radius: 15px 50px 50px 0;
+	 margin: 20px;
+	 padding: 15px;
+	 text-align: left;
+} 
+
+img {
+	border-radius: 30px;
+	height: 300px;
+	width: 300px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+}
+
+.section {
+	background-color: slateBlue;
+	border: solid 2px royalBlue;
+	border-radius: 15px;
+	margin: 40px;
+	padding: 25px;
+}
+
+footer {
+	background-color: slateBlue;
+	border: solid 2px darkSlateBlue;
+	border-radius: 50px;
+	margin: 40px;
+	padding: 15px;
+	text-align: center;
+}
