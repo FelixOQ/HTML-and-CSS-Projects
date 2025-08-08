@@ -18,7 +18,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff;
+    background-color: #5C2E20;
 }
 
 footer,
@@ -41,8 +41,8 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: #E91C1C;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5)
+    color: #DB6316;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 h1::after {
@@ -51,7 +51,7 @@ h1::after {
     content: "";
     height: 2px;
     width: 150px;
-    background: #E91C1C;
+    background: #DB6316;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5)
 }
@@ -159,7 +159,7 @@ section {
 ========================= */
 
 #home {
-    background: url(../images/planets.jpg) no-repeat 50% 50%;
+    background: url(../images/cover.webp) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -176,9 +176,9 @@ section {
 }
 
 .head-main {
-    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 4px 5px #6B2F0Be6;
     font-variant: small-caps;
-    color: #fff;
+    color: #d82e25;
     letter-spacing: 5pt;
     word-spacing: 21pt;
     font-size: 4.5em;
@@ -186,8 +186,9 @@ section {
     font-family: impact, sans-serif;
     line-height: 2;
     font-weight: 900;
-    border: 5px double #fff;
+    border: 10px double #DB6316;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .head-sub-main {
@@ -217,12 +218,12 @@ section {
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100, 65, 0, 0.3);
+    background-color: #4D6F84;
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 #contact {
-    background-color: #f5f3f3;
+    background-color: #98B2C3;
 }
 
 .reservation {
@@ -230,7 +231,7 @@ section {
     padding: 10px;
     border-radius: 10px;
     margin: 0px auto;
-    background-color: rgba(100, 65, 0, 0.3);
+    background-color: #979597;
     box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -273,7 +274,7 @@ section {
     border: 1px solid #808080;
     margin: 2% auto;
     border-radius: 7px;
-    background: rgb(227, 222, 222);
+    background: #DCDBDB;
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
     font-family: 'Raleway', sans-serif;
 }
@@ -300,13 +301,40 @@ section {
     box-shadow: 0 0 18px rgba(100, 65, 0, 0.8);
 }
 
+.dropdown {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #13161B;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.dropdown select {
+    margin-left: 20px;
+    width: 55%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #C5C4C5;
+    border-radius: 5px;
+}
+
 .form-spacer {
     padding: 30px 39px;
 }
 
 .terms {
     margin: 30px 1px 0 0;
-    margin-top: 11%;
+    margin-top: 13%;
     padding-left: 52px;
     font-size: 14px;
     line-height: 5px;
@@ -354,8 +382,8 @@ section {
 =================== */
 
 #footer {
-    background-color: rgba(100, 65, 0, 0.3);
-    color: #000;
+    background-color: #2B3E4A;
+    color: #FEFBE6;
     text-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 1);
     padding: 20px 50px 20px 50px;
     text-align: right;
