@@ -14,7 +14,7 @@
 }
 
 .menu li {
-    color: #000;
+    color: #77b9e2;
     background-color: #fffed390;
     display: inline-block;
     margin: 0% auto;
@@ -34,6 +34,11 @@
 .menu li:hover {
     color: #77b9e2;
     background-color: #604738ad;
+}
+
+.menu li a {
+    color: #77b9e2;
+    text-decoration: none;
 }
 
 
