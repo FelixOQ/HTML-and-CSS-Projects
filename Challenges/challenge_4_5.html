@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Challenge 4 & 5</title>
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 60px;
+            padding-top: 60px;
+        }
+
+        h2 {
+            margin-top: 35px;
+        }
+
+        h3 {
+            font-size: xx-large;
+            margin-bottom: 50px;
+            padding-top: 105px;
+        }
+
+        #contact {
+            text-align: center;
+            margin-top: 125px;
+        }
+
+        #contact p {
+            padding: 55px;
+        }
+
+        .img-container {
+            position: relative;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        .img-container p {
+            position: absolute;
+            top: 18%;
+            left: 36%;
+            max-width: 180px;
+            font-family: monospace;
+            font-size: 16px;
+        }
+
+        .navbar {
+            background-color: cadetblue;
+            color: blanchedalmond;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        ul li {
+            float: left;
+            height: 50px;
+        }
+
+        ul li a {
+            display: block;
+            color: blanchedalmond;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
+        ul li a:hover {
+            background-color: darkcyan;
+        }
+
+        ul li a:active {
+            background-color: cornflowerblue;
+        }
+
+        ul li:nth-last-child(1) {
+            float: right;
+        }
+
+        .img-container {
+            z-index: -1;
+        }
+
+        #mangoloco {
+            max-height: 100%;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><img src="./Images/mangoloco.jpg" alt="Mango Loco cans" id="mangoloco"></li>
+        </ul>
+    </div>
+
+    <div id="home">
+        <h1>Lorna Mae Geraldine Burke</h1>
+        <h2>Coding whiz extraordinaire</h2>
+    </div>
+
+    <div id="about" class="img-container">
+        <img src="./Images/furret.png" alt="Furret">
+        <p>The Lorna: A fearsome and cuddly predator fuelled by ambition and caffeine.</p>
+    </div>
+
+    <div id="contact">
+        <h3>How to Contact Me</h3>
+        <p>Don't.</p>
+        <p>Don't do it.</p>
+        <p>Please god just let me have some peace and quiet so I can focus on my coding for god's sake!</p>
+        <br /><br /><br />
+        <p><small>If you really, really, <strong><em>REALLY</em></strong> must, you can reach me at
+                feralorna@monchmonchmango.com. Please send vegan cookies as an apology for contacting me.</small></p>
+    </div>
+</body>
+
+</html>

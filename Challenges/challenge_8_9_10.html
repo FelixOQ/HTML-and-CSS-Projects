@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Challenge 8, 9, & 10</title>
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+            margin: auto;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: darkslateblue;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        p {
+            color: blanchedalmond;
+            position: absolute;
+            font-size: 35px;
+            top: 40%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        video {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 12px;
+        }
+
+        .container-video {
+            position: relative;
+            width: 350px;
+            margin: auto;
+        }
+
+        .container-video:hover .overlay {
+            opacity: 1;
+        }
+
+        .container-video p {
+            color: blanchedalmond;
+            position: absolute;
+            font-size: 20px;
+            top: 40%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./Images/popcorn.jpg" alt="Bowl of popcorn">
+        <div class="overlay">
+            <p>Can popcorn make you fart?</p>
+        </div>
+    </div>
+
+    <div class="container-video">
+        <video width="350px" muted autoplay loop>
+            <source src="./Videos/eating_popcorn.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <p>Why not try some and find out...</p>
+        </div>
+    </div>
+</body>
+
+</html>
