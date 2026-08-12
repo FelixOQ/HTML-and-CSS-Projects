@@ -3,6 +3,30 @@
 	<head>
 		<title>HTML Text Practice</title>
 		<meta charset="utf-8">
+		<style>
+			@keyframes zoom {
+				0% {
+					transform: scale(1,1);
+				}
+				20% {
+					transform: scale(1,1);
+				}
+				60% {
+					transform: scale(1.2,1.2);
+				}
+				100% {
+					transform: scale(1,1);
+				}
+			}
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 40px;
+				animation: zoom 8s;
+			}
+		</style>
 	</head>
 	<body>
 		<p><font color="mediumseagreen" face="calibri" size="2">Here's some text written in <u>Medium Sea Green</u>.</font></p>
