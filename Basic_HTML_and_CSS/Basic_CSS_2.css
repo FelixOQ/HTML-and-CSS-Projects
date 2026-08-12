@@ -1,10 +1,25 @@
 p {
 color: honeydew;
-background-color: darkcyan;
+background-image: radial-gradient(darkcyan, slateblue);
 font-size: 25px;
 text-align: center;
+height: 90px;
+line-height: 90px;
+max-width: 500px;
+margin-left: auto;
+margin-right: auto;
+animation-name: headers;
+animation-duration: 4s;
+animation-timing-function: ease-in-out;
 }
 
 .second {
 	text-shadow: -2px 2px 1px hotpink;
+}
+
+@keyframes headers {
+	0% {max-width: 500px;}
+	25% {max-width: 1000px;}
+	75% {max-width: 370px;}
+	100% {max-width: 500px;}
 }

@@ -4,12 +4,32 @@
 		<title>Styling Practice</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="Basic_CSS_1.css">
+		<style>
+			body {
+				opacity: 1;
+				transition: 1s opacity;
+			}
+
+			body.fade-out {
+				opacity: 0;
+				transition: none;
+			}
+		</style>
 	</head>
 	<body>
+		<script>
+			document.body.classList.add('fade-out');
+			window.addEventListener('DOMContentLoaded', () => {
+				document.body.classList.remove('fade-out');
+			});
+		</script>
 		<h1>Here's a new heading to practice styling with CSS</h1>
 		<div>
 			<h2>The font used in this div is Monaco</h2>
 			<p>The text in this paragraph is written in indigo, and the heading is written in cornflower blue.</p>
+		</div>
+		<div>
+			<p style="font-size:7vw;">And now we're practicing vw font sizing and a fade-in effect</p>
 		</div>
 	</body>
 <html>

@@ -1,29 +1,147 @@
 <!DOCTYPE html>
 <html>
-	<body>
-		<style>
+
+<head>
+	<title>Styling & Forms</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
 		.font_1 {
-		background-color: black;
-		color: yellow;
-		font-size: large;
+			background-color: black;
+			color: yellow;
+			font-size: large;
 		}
-		
+
 		.font_2 {
-		background-color: darkblue;
-		color: white;
-		font-size: medium;
+			background-color: darkblue;
+			color: white;
+			font-size: medium;
 		}
-		
+
 		.green {
-		background-color: darkgreen;
-		color: mediumspringgreen;
-		text-align: center;
-		font-family: copperplate;
+			background-color: darkgreen;
+			color: mediumspringgreen;
+			text-align: center;
+			font-family: copperplate;
 		}
-		</style>
-		<h2 class="font_1">This h2 element is styled per class attribute font_1</h2>
-		<h3 class="font_2">This h3 element is styled per class attribute font_2</h3>
-		<h4 class="font_1">Even though this is a h4 element, it is styled the same as the h2 element because we pointed to the class attribute font_1</h4>
-		<p class="green">And now here we have a short,<br>green<br>paragraph, styled with the .green class attribute.</p>
-	</body>
+
+		.open-button {
+			background-color: #555;
+			color: white;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			opacity: 0.8;
+			position: fixed;
+			bottom: 23px;
+			right: 28px;
+			width: 280px;
+		}
+
+		.form-popup {
+			display: none;
+			position: fixed;
+			bottom: 0;
+			right: 15px;
+			border: 3px solid #f1f1f1;
+			z-index: 9;
+		}
+
+		.form-container {
+			width: 300px;
+			padding: 10px;
+			background-color:antiquewhite;
+		}
+
+		form input[type=text],
+		form input[type=tel] {
+			width: 100%;
+			padding: 15px;
+			margin: 5px 0 22px 0;
+			border: none;
+			background: #f1f1f1;
+		}
+
+		form input[type=submit] {
+			background-color: #7304aa;
+			color: white;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			margin-bottom: 10px;
+			opacity: 0.8;
+		}
+
+		.cancel {
+			background-color: rgb(224, 30, 30);
+			color: white;
+			padding: 16px 20px;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			margin-bottom: 10px;
+			opacity: 0.8;
+		}
+
+		form input[type=submit]:hover,
+		.cancel:hover {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<h2 class="font_1">This h2 element is styled per class attribute font_1</h2>
+	<h3 class="font_2">This h3 element is styled per class attribute font_2</h3>
+	<h4 class="font_1">Even though this is a h4 element, it is styled the same as the h2 element because we pointed to
+		the class attribute font_1</h4>
+	<p class="green">And now here we have a short,<br>green<br>paragraph, styled with the .green class attribute.</p>
+	<div>
+		<button class="open-button" onclick="openForm()">Sign up for magic genie wishes!</button>
+
+		<div class="form-popup" id="popForm">
+			<div class="form-container">
+			<form name="form1" onsubmit="return formVal()">
+				<label for="fname">First name:</label><br>
+				<input type="text" id="fname" name="fname"><br>
+				<label for="phonenum">Phone number:</label><br>
+				<input type="tel" id="phonenum" name="phonenum"><br>
+				<input type="submit">
+			</form>
+			<button class="cancel" onclick="closeForm()">Close</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		function formVal() {
+			let x = document.forms["form1"]["fname"].value;
+			let y = document.forms["form1"]["phonenum"].value;
+			if (x == "") {
+				alert("Please provide your name");
+				return false;
+			} else if (y == "") {
+				alert("Please provide your phone number");
+				return false;
+			} else if (isNaN(y)) {
+				alert("Please provide a valid phone number");
+				return false;
+			} else if (y.length < 6) {
+				alert("Please provide a valid phone number");
+				return false;
+			}
+		}
+
+		function openForm() {
+			document.getElementById("popForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("popForm").style.display = "none";
+		}
+	</script>
+</body>
+
 </html>
