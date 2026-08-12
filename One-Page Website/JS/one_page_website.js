@@ -40,3 +40,24 @@ function showSlides(n) {
   console.log(dots[slideIndex-1].className);
   console.log(dots);
 }
+
+
+function formVal() {
+			let x = document.forms["form1"]["fname"].value;
+			let y = document.forms["form1"]["comment"].value;
+			if (x == "") {
+				alert("Please provide your name");
+				return false;
+			} else if (y == "") {
+				alert("Please submit a comment");
+				return false;
+			}
+		}
+
+		function openForm() {
+			document.getElementById("popForm").style.display = "block";
+		}
+
+		function closeForm() {
+			document.getElementById("popForm").style.display = "none";
+		}

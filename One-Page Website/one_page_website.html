@@ -383,6 +383,23 @@
 	</footer>
 	<!-- End footer -->
 
+	<div>
+		<button class="open-button" onclick="openForm()">Leave a comment</button>
+
+		<div class="form-popup" id="popForm">
+			<div class="form-container">
+			<form name="form1" onsubmit="return formVal()">
+				<label for="fname">First name:</label><br>
+				<input type="text" id="fname" name="fname"><br>
+				<label for="comment">Comment:</label><br>
+				<textarea id="comment" name="comment" rows="3"></textarea><br>
+				<input type="submit">
+			</form>
+			<button class="cancel" onclick="closeForm()">Close</button>
+			</div>
+		</div>
+	</div>
+
 	<script src="./JS/one_page_website.js"></script>
 </body>
 

@@ -18,3 +18,78 @@ input[type="submit"] {
     border: solid 2px royalblue;
     border-radius: 6px;
 }
+
+
+* {
+    box-sizing: border-box;
+}
+
+.open-button {
+    background-color: #506fee;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 38px;
+    right: 43px;
+    width: 260px;
+    border-radius: 6px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 23px;
+    right: 23px;
+    border: 3px solid #f1f1f1;
+    border-radius: 3px;
+    z-index: 9;
+}
+
+.form-container {
+    width: 300px;
+    padding: 15px 20px;
+    background-color: thistle;
+    color:#7304aa;
+}
+
+.form-container input[type=text],
+.form-container textarea {
+    width: 100%;
+    height: initial;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=submit] {
+    background-color: #7304aa;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: initial;
+    margin: initial;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.cancel {
+    background-color: rgb(237, 63, 63);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+
+.form-container input[type=submit]:hover,
+.cancel:hover, .open-button:hover {
+    opacity: 1;
+}
