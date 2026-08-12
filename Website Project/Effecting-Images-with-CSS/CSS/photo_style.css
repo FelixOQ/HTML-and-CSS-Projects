@@ -85,3 +85,44 @@ p {
 .photo:hover img {
     transform: scale(1.1);
 }
+
+
+/* --------------------------
+        SLIDESHOW
+--------------------------- */
+
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 240px;
+    line-height: 240px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.first {
+    background-color:coral;
+    color:darkmagenta;
+}
+
+.second {
+    background-color:darkred;
+    color:deepskyblue;
+}
+
+.third {
+    background-image: radial-gradient(darkslateblue, seagreen);
+    color:lightgoldenrodyellow;
+}
